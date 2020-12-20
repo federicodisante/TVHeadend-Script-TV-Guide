@@ -1,0 +1,28 @@
+#!/bin/bash
+# Copyright(c) 2020 Federico Di Sante
+#
+# This script takes over a part of the code
+# Andrea Draghetti (https://github.com/drego85/TVHeadend-Script-TV-Guide)
+# and
+# Mathias F. Svendsen - okey.dk
+#
+# This file may be licensed under the terms of of the
+# GNU General Public License Version 3 (the ``GPL'').
+#
+# Software distributed under the License is distributed
+# on an ``AS IS'' basis, WITHOUT WARRANTY OF ANY KIND, either
+# express or implied. See the GPL for the specific language
+# governing rights and limitations.
+#
+# You should have received a copy of the GPL along with this
+# program. If not, go to http://www.gnu.org/licenses/gpl.html
+# or write to the Free Software Foundation, Inc.,
+# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+#
+# Put this script in a PATH folder, for example:
+# ~/.kodi/addons/virtual.system-tools/bin
+#
+wget http://www.vuplus-community.net/rytec/rytecIT_Basic.xz -O /tmp/rytecIT_Basic.xz > /dev/null 2>&1
+unxz /tmp/rytecIT_Basic.xz > /dev/null 2>&1
+cat /tmp/rytecIT_Basic
+rm /tmp/rytecIT_Basic > /dev/null 2>&1
